@@ -10,16 +10,16 @@ static unsigned int border_width = 1;
 
 static const char *fonts[] = {
 	"JetBrains Mono:size=10",
-	"JoyPixels:pixelsize=10"
+	"JoyPixels:size=10"
 };
 static const unsigned int bgalpha = 0xe6;
 static const unsigned int fgalpha = OPAQUE;
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#a89984", "#1d2021" },
-	[SchemeSel] = { "#ebdbb2", "#98971a" },
-	[SchemeOut] = { "#1d2021", "#8ec07c" },
+	[SchemeNorm] = { "#ebdbb2", "#000000" },
+	[SchemeSel] = { "#000000", "#ebdbb2" },
+	[SchemeOut] = { "#000000", "#000000" },
 };
 static const unsigned int alphas[SchemeLast][2] = {
 	/*		fgalpha		bgalphga	*/
